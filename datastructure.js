@@ -20,9 +20,9 @@ class Queue {
     // Return and remove top element in Queue
     // Return undefined if Queue is empty
     dequeue() {
-        if(this.count == 0) return undefined
-        let deleteItem = this.items[this.count - 1]
-        this.count -= 1
+
+       let deleteItem = this.items.shift();
+       this.count -= 1
         console.log( deleteItem + " removed")
         return deleteItem
     }
